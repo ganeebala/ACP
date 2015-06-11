@@ -1,0 +1,256 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+@charset "UTF-8";
+/* Base Styles */
+#leftnav,
+#leftnav ul,
+#leftnav li,
+#leftnav a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+#leftnav a {
+  line-height: 1.3;
+}
+#leftnav {
+  width: 20%;
+}
+#leftnav > ul > li > a {
+  padding-right: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  background: #bd0e36;
+  color: #ffffff;
+  border-bottom: 1px solid #5e071b;
+  text-transform: uppercase;
+}
+#leftnav > ul > li > a > span {
+  background: #ed1144;
+  padding: 10px;
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+}
+#leftnav > ul > li > a:hover {
+  text-decoration: none;
+}
+#leftnav > ul > li.active {
+  border-bottom: none;
+}
+#leftnav > ul > li.active > a {
+  color: #fff;
+}
+#leftnav > ul > li.active > a span {
+  background: #bd0e36;
+}
+#leftnav span.cnt {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+/* Sub menu */
+#leftnav ul ul {
+  display: none;
+}
+#leftnav ul ul li {
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+}
+#leftnav ul ul a {
+  padding: 10px;
+  display: block;
+  color: #ed1144;
+  font-size: 13px;
+}
+#leftnav ul ul a:hover {
+  color: #bd0e36;
+}
+#leftnav ul ul li.odd {
+  background: #f4f4f4;
+}
+#leftnav ul ul li.even {
+  background: #fff;
+}
+
+/* Top Nav */
+#topnav {
+  background: #f96e5b;
+	margin-left: 20%;
+    width: 80%;
+}
+#topnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#topnav ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#topnav ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#topnav.align-right ul li {
+  float: right;
+}
+#topnav.align-center ul {
+  text-align: center;
+}
+#topnav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#topnav ul li a:hover {
+  color: #333333;
+}
+#topnav ul li a:hover:before {
+  width: 100%;
+}
+#topnav ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#topnav ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#topnav ul li.last > a:after,
+#topnav ul li:last-child > a:after {
+  display: none;
+}
+#topnav ul li.active a {
+  color: #333333;
+}
+#topnav ul li.active a:before {
+  width: 100%;
+}
+#topnav.align-right li.last > a:after,
+#topnav.align-right li:last-child > a:after {
+  display: block;
+}
+#topnav.align-right li:first-child a:after {
+  display: none;
+}
+
+/* #content {
+    margin-left: 300px;
+    position: fixed;
+    top: 70px;
+} */
+
+@media screen and (max-width: 768px) {
+  #topnav ul li {
+    float: none;
+    display: block;
+  }
+  #topnav ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #topnav ul li.last > a,
+  #topnav ul li:last-child > a {
+    border: 0;
+  }
+  #topnav ul li a:after {
+    display: none;
+  }
+  #topnav ul li a:before {
+    display: none;
+  }
+}
+
+.chart
+{
+  display:none;
+  margin-top: 5%;
+  margin-top: 10%;
+}
+
+#formchart
+{
+	margin-left: 10%;
+    margin-top: -12.75%;
+    width: 75%;
+}
+
+#leftandcontent {
+	display:inline-block;
+	width:100%;
+}
+
+.picker {
+	margin:0;
+	padding:0;
+	border:0;
+	width:70px;
+	height:20px;
+	border-right:20px solid green;
+	line-height:20px;
+}
+
+#generatedTable {
+	margin-left: 19%;
+}
+
+#generatedTable table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#generatedTable th, td {
+    padding: 5px;
+    text-align: left;    
+}
+
